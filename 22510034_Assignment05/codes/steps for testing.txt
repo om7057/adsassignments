@@ -1,0 +1,40 @@
+steps for testing :
+
+Step 1: Install k6 Properly
+Since you're using PowerShell, follow these steps:
+
+Option 1: Install k6 via Chocolatey (Recommended)
+Open PowerShell as Administrator
+Run the following command:
+sh
+Copy
+Edit
+choco install k6 -y
+Restart PowerShell and try:
+sh
+Copy
+Edit
+k6 version
+✅ If k6 is installed correctly, this will show the installed version.
+Option 2: Install k6 via Windows MSI Installer
+Download the latest Windows MSI installer from: 👉 https://k6.io/docs/getting-started/installation/
+Install it and follow the setup instructions.
+Open a new PowerShell terminal and run:
+sh
+Copy
+Edit
+k6 version
+✅ If it works, proceed with the performance test.
+Step 2: Run the Test Again
+Once k6 is installed, navigate to your project directory:
+
+sh
+Copy
+Edit
+cd D:\Academics\0TY\Labs\Sem-VI\ADSL\22510034_Assignment04\codes
+Then, run the test again:
+
+sh
+Copy
+Edit
+k6 run test.js

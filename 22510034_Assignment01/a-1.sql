@@ -1,0 +1,4 @@
+CREATE DATABASE student_db;
+CREATE USER '22511234'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON student_db.* TO '22511234'@'localhost';
+FLUSH PRIVILEGES;

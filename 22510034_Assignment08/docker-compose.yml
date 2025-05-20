@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  ndb2:
+    image: mysql/mysql-cluster
+    container_name: ndb2
+    command: ndbd --ndb-connectstring=192.168.0.2
+    networks:
+      cluster_net:
+        ipv4_address: 192.168.0.4
+
+networks:
+  cluster_net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.0.0/16
